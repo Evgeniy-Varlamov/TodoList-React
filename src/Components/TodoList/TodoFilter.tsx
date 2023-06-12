@@ -11,7 +11,7 @@ export function TodoFilter (filter: any) {
                    className="filter-check hide"
                    name='filter'
                    defaultChecked={filter.checked}
-                   onChange={()=>{console.log(filter.text); selectFilter(filter.text)}}
+                   onChange={()=>{selectFilter(filter.text)}}
             />
             <span className='filter-text'>{filter.text}</span>
         </label>
