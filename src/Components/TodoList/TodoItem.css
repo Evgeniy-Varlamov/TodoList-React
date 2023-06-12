@@ -1,0 +1,31 @@
+.todo {
+    list-style-type: none;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed .todo-text  {
+    color: #625F5F;
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+
+.todo-text::before {
+    vertical-align: middle;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.checkbox:checked ~ .todo-text::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg role='img' focusable='false' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3e%3cpath fill='%2343a047' d='M1.00000001 7.71134025l3.83505154 3.8041237 8.16494844-8.16494844-.86597938-.86597938L4.83505155 9.7835052 1.86597939 6.81443303z'/%3e%3c/svg%3e");
+}
+
+.remove {
+    cursor: pointer;
+}

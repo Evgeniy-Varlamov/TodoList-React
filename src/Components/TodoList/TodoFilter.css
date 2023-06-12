@@ -1,0 +1,8 @@
+.filter {
+    margin-right: 10px;
+}
+
+.filter-check:checked ~ span {
+    border: 1px solid #ff0000;
+    padding: 3px;
+}
